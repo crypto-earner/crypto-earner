@@ -1,14 +1,23 @@
-# Crypto Faucet Guide - GitHub Pages
+# CryptoEarner 💰
 
-A modern, educational website about cryptocurrency faucets with curated faucet listings and affiliate links.
+**Earn free cryptocurrency with trusted faucets** - A modern guide to earning BTC, ETH, DOGE, XRP and more through verified crypto faucets.
 
-## 🚀 Features
+## 🌟 About
+
+CryptoEarner is your comprehensive resource for earning free cryptocurrency through trusted faucets. Learn how faucets work, set up your FaucetPay account, and start earning with our curated list of verified faucets.
+
+### Live Site
+👉 [crypto-earner.github.io/crypto-earner](https://crypto-earner.github.io/crypto-earner/)
+
+## ✨ Features
 
 - **Modern Design**: Beautiful gradient backgrounds, smooth animations, and responsive layout
 - **Educational Content**: Comprehensive information about crypto faucets and how they work
-- **Curated Faucet List**: Verified faucets with affiliate links
+- **Curated Faucet List**: Verified multi-coin faucets supporting BTC, ETH, DOGE, XRP, LTC, TRX, BCH
+- **FaucetPay Integration**: Step-by-step guide to set up your microwallet
 - **Interactive Elements**: FAQ accordion, smooth scrolling, and scroll animations
 - **Mobile Responsive**: Works perfectly on all devices
+- **SEO Optimized**: Meta tags for better search engine visibility
 
 ## 📁 Project Structure
 
@@ -19,6 +28,14 @@ crypto-earner/
 ├── script.js       # Interactive JavaScript
 └── README.md       # This file
 ```
+
+## 🛠️ Tech Stack
+
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with gradients, animations, and flexbox/grid
+- **JavaScript (Vanilla)** - Interactive features and scroll animations
+- **Google Fonts** - Inter font family
+- **CoinGecko API** - Crypto logos
 
 ## 🛠️ Local Development
 
@@ -141,14 +158,6 @@ This project is open source and available for educational purposes.
 
 This website provides educational information about cryptocurrency faucets. Cryptocurrency investments carry risks. Always do your own research and never invest more than you can afford to lose.
 
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📧 Support
-
-For questions or support, please open an issue on GitHub.
-
 ---
 
-**Happy earning! 💰**
+**Start earning free crypto today! 💰**
