@@ -111,3 +111,35 @@ document.querySelectorAll('.btn-faucet').forEach(btn => {
         // You can add analytics tracking here
     });
 });
+
+// Theme Toggle Logic
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+function getPreferredTheme() {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+        return storedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+}
+
+if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    });
+}
+
+// Listen for system theme changes if user hasn't set an explicit preference
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'dark' : 'light');
+    }
+});
+
