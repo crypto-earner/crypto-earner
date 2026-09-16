@@ -250,6 +250,28 @@ body {
     transform: translateX(5px);
 }
 
+.btn-cta {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    font-size: 1.1rem;
+    padding: 1.25rem 2.5rem;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.5);
+}
+
+.btn-cta .arrow-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-cta:hover .arrow-icon {
+    transform: translateX(8px);
+}
+
 /* Floating Coins */
 .floating-coins {
     position: absolute;
@@ -353,6 +375,62 @@ body {
 .about-card p {
     color: var(--gray);
     line-height: 1.8;
+}
+
+/* FaucetPay CTA */
+.faucetpay-cta {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+    border: 2px solid rgba(16, 185, 129, 0.3);
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.cta-features {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.cta-features li {
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+}
+
+.cta-features li strong {
+    color: #10b981;
 }
 
 /* Steps Container */
